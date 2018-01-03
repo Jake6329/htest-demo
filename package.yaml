@@ -47,3 +47,13 @@ tests:
     dependencies:
     - htest-demo
     - HUnit
+  htest-demo-test-qc:
+    main:               Spec.hs
+    source-dirs:        test/qc
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - htest-demo
+    - QuickCheck
